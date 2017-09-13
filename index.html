@@ -6,7 +6,12 @@
     <meta charset="utf-8">
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
-  <body>
+  <body onload="setFocus()">
+    <div id="search-box-container">
+        <div id="search-box">
+            <input id="search-text" type="text"/><button>FIND</button>
+        </div>
+    </div>
     <div id="response-info">I should see this!</div>
     <div id="map"></div>
     <script>
@@ -17,6 +22,9 @@
           center: {lat: 40.730610, lng: -73.935242},
           zoom: 12
         });
+      }
+      function setFocus() {
+          document.getElementById("search-text").focus();
       }
     </script>
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDHEM2RZMVgr4iqKS02LkyMcTTCBBTwkU8&callback=initMap"
