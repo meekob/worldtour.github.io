@@ -40,15 +40,14 @@
     margin-right: 4px;
 }
 
-#search-box button {
-    padding: 6px 12px;
+#find-button {
     background: white;
     border: none;
     font-weight: bold;
     border-radius: 4px;
 }
 
-#search-box button:hover {
+#find-button:hover {
     cursor: pointer;
     background: #eeeeee;
 }
